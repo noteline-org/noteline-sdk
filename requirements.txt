@@ -1,1 +1,3 @@
 nbformat
+smart_open
+unittest

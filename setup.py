@@ -5,16 +5,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="noteline-sdk-core",
-    version="2.0.0",
+    version="2.1.0",
     author="Viacheslav Kovalevskyi",
     author_email="viacheslav@kovalevskyi.com",
     description="core Noteline SDK",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/noteline-org/noteline-core",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude="test/*"),
     install_requires=[
-        'nbformat'
+        "nbformat",
+        "smart_open"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
