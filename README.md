@@ -1,1 +1,1 @@
-# noteline-sdk
+# noteline-sdk-core

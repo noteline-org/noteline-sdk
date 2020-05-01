@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="noteline-sdk",
-    version="1.1.1",
+    name="noteline-sdk-core",
+    version="2.0.0",
     author="Viacheslav Kovalevskyi",
     author_email="viacheslav@kovalevskyi.com",
-    description="SDK for manipulating noteline specific metadata of the Notebooks",
+    description="core Noteline SDK",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/noteline-org/noteline-sdk",
+    url="https://github.com/noteline-org/noteline-core",
     packages=setuptools.find_packages(),
     install_requires=[
         'nbformat'
