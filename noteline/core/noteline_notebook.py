@@ -10,7 +10,7 @@ class NotelineNotebook(object):
 
   def get_env(self):
     if "env" not in self.notebook.metadata:
-        raise ValueError("There is no 'env' key in the Notebook's metadata")
+        return {}
     return self.notebook.metadata.env
 
   def set_env(self,

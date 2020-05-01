@@ -32,3 +32,8 @@ class TestNotelineNotebook(unittest.TestCase):
         self.assertEqual(env["name"], env_name)
         self.assertEqual(env["type"], env_type)
         self.assertEqual(env["uri"], env_uri)
+
+    def test_metadata_get_when_no_metadata(self):
+        nb = noteline_notebook.get_noteline_notebook(TEST_NOTEBOOK_FILE_NAME)
+        env = nb.get_env()
+        self.assertEqual(env, {})

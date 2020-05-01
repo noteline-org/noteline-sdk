@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="noteline-sdk-core",
-    version="2.2.3",
+    version="2.2.4",
     author="Viacheslav Kovalevskyi",
     author_email="viacheslav@kovalevskyi.com",
     description="core Noteline SDK",
