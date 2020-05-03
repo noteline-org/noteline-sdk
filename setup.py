@@ -17,9 +17,6 @@ setuptools.setup(
         "nbformat",
         "smart_open"
     ],
-    tests_require=[
-        "unittest"
-    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

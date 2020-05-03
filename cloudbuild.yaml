@@ -10,9 +10,9 @@ steps:
       - "${COMMIT_SHA}"
   - name: "python:3.6"
     dir: "noteline-sdk-core"
-    entrypoint: "python"
+    entrypoint: "bash"
     args:
-      - "-m"
-      - "unittest"
-      - "discover"
-      - "."
+      - "-c"
+      - |
+        pip install .
+        python -m unittest discover .
