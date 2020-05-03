@@ -1,0 +1,18 @@
+steps:
+  - name: "gcr.io/cloud-builders/git"
+    args:
+      - "clone"
+      - "https://github.com/noteline-org/noteline-sdk-core.git"
+  - name: "gcr.io/cloud-builders/git"
+    dir: "noteline-sdk-core"
+    args:
+      - "checkout"
+      - "${COMMIT_SHA}"
+  - name: "python:3.6"
+    dir: "noteline-sdk-core"
+    entrypoint: "python"
+    args:
+      - "-m"
+      - "unittest"
+      - "discover"
+      - "."
